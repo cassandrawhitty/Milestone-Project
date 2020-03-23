@@ -1,0 +1,76 @@
+/***** BASE STYLES *****/
+body {
+  background-color: #F0F8FF;
+}
+
+h2 {
+  font-family: 'Pacifico', cursive;
+  color: #191970;
+  text-align: center;
+}
+
+/***** GRID *****/
+.full-width {
+  float: left;
+  width: 100%;
+}
+
+.half-width {
+  float: left;
+  width: 50%;
+}
+
+.third-width {
+  float: left;
+  width: 33.33333%;
+}
+/***** HEADER *****/
+.header-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+#header {
+  margin: 10px;
+}
+
+/***** ABOUT *****/
+.profile-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+}
+
+#intro {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  text-align: center;
+}
+
+p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 25px;
+}
+
+/***** PORTFOLIO *****/
+
+#work {
+  margin: 20px;
+}
+/***** CONTACT *****/
+#contact {
+  margin: 10px;
+}
+
+h3 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 30px;
+}
