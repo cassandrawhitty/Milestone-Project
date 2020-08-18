@@ -94,14 +94,14 @@ html {
 
 body {
    font-size: 1em;
-   font-family: 'Open Sans', sans-serif;
+   font-family: 'Alata', sans-serif;
    text-align: center;
    background-color: #AFEEEE;
    padding: 0;
    margin: 0;
  }
 
-img {
+ img {
    width: 100%;
  }
 
@@ -122,15 +122,45 @@ img {
      grid-column-end: 4;
    }
 
+   header p {
+     font-size: 0.5em;
+   }
+
+   header img {
+     width: 100%;
+     height: 10em;
+   }
+
 
    /***** ABOUT *****/
+
+   .about {
+     grid-column-start: 1;
+     grid-column-end: 4;
+   }
 
 
    /***** PORTFOLIO *****/
 
+   #work {
+     grid-column-start: 1;
+     grid-column-end: 4;
+
+   }
+
 
    /***** CONTACT *****/
 
+   #contact {
+     grid-column-start: 1;
+     grid-column-end: 4;
+   }
+
+   .icons {
+      display: flex;
+      justify-content: space-evenly;
+
+   }
 
    /* ==========================================================================
       Helper classes
@@ -223,11 +253,211 @@ img {
 
    @media only screen and (min-width: 768px) {
 
-   /*****TABLET STYLES*****/
+/*****************************TABLET STYLES*****************************/
+
+   /***** BASE STYLES *****/
+
+html {
+   font-size: 16px;
+ }
+
+body {
+   font-size: 1em;
+   font-family: 'Alata', sans-serif;
+   text-align: center;
+   background-color: #AFEEEE;
+   padding: 0;
+   margin: 0;
+ }
+
+ h2 {
+   font-size: 3em;
+ }
+
+img {
+   width: 100%;
+ }
+
+   /***** GRID *****/
+
+   .grid-container {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     grid-template-rows: auto;
+     column-gap: 10px;
+     row-gap: 15px;
+   }
+
+   /***** HEADER *****/
+
+   .header {
+     grid-column-start: 1;
+     grid-column-end: 4;
+   }
+
+   header p {
+     font-size: 0.5em;
+   }
+
+
+   /***** ABOUT *****/
+
+   .about {
+     grid-column-start: 1;
+     grid-column-end: 4;
+   }
+
+   .profile-center {
+     width: 50%;
+   }
+
+   #introskillset {
+     display: flex;
+     padding-left: 5em;
+
+   }
+
+   #intro {
+     width: 50%;
+   }
+
+   #skillset {
+     width: 50%;
+   }
+
+   /***** PORTFOLIO *****/
+
+   #work {
+     grid-column-start: 1;
+     grid-column-end: 4;
+   }
+
+   #projects img {
+     width: 75%;
+   }
+
+   /***** CONTACT *****/
+
+   #contact {
+     grid-column-start: 1;
+     grid-column-end: 4;
+   }
+
+   .icons {
+      display: flex;
+      justify-content: space-evenly;
+
+   }
 
    @media only screen and (min-width: 1200px) {
 
-   /*****DESKTOP STYLES*****/
+/******************************DESKTOP STYLES******************************/
+
+  /***** BASE STYLES *****/
+
+html {
+   font-size: 16px;
+ }
+
+body {
+   font-size: 1em;
+   font-family: 'Alata', sans-serif;
+   text-align: center;
+   background-color: #AFEEEE;
+   padding: 0;
+   margin: 0;
+ }
+
+ h2 {
+   font-size: 3em;
+ }
+
+ img {
+   width: 100%;
+ }
+
+   /***** GRID *****/
+
+   .grid-container {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     grid-template-rows: auto;
+     column-gap: 10px;
+     row-gap: 15px;
+   }
+
+   /***** HEADER *****/
+
+   .header {
+     grid-column-start: 1;
+     grid-column-end: 4;
+   }
+
+   header p {
+     font-size: 0.5em;
+   }
+
+   header img {
+     height: 10em;
+   }
+
+   /***** ABOUT *****/
+
+   .about {
+     grid-column-start: 1;
+     grid-column-end: 4;
+   }
+
+   .profile-center {
+     width: 50%;
+   }
+
+   #introskillset {
+     display: flex;
+     padding-left: 5em;
+
+   }
+
+   #intro {
+     width: 50%;
+   }
+
+   #skillset {
+     width: 50%;
+   }
+
+   /***** PORTFOLIO *****/
+
+   #work {
+     grid-column-start: 1;
+     grid-column-end: 4;
+   }
+
+   #projects {
+     display: flex;
+   }
+
+   #projects img {
+     width: 100%;
+   }
+
+   a:link {
+    text-decoration: none;
+  }
+
+
+   /***** CONTACT *****/
+
+   #contact {
+     grid-column-start: 1;
+     grid-column-end: 4;
+   }
+
+   .icons {
+      display: flex;
+      justify-content: space-evenly;
+
+   }
 
 /* ==========================================================================
    Print styles.
